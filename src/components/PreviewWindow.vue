@@ -1,10 +1,28 @@
 <template>
-    <div></div>
+    <div class="preview">
+        <div class="preview__img">
+        </div>
+        <div class="preview__item preview__item__main">
+        </div>
+        <div class="preview__item preview__item__slave">
+        </div>
+        <div class="preview__item preview__item__slave">
+        </div>
+        <div class="preview__item preview__item__slave">
+        </div>
+        <div class="preview__item preview__item__slave">
+        </div>
+        <div class="preview__item preview__item__slave">
+        </div>
+        <div class="preview__item preview__item__slave">
+        </div>
+    </div>
 </template>
-
-<script>
-export default {
-}
+<script lang="ts">
+import { defineComponent } from 'vue'
+export default defineComponent({
+    name: 'PreviewWindow'
+})
 </script>
 
 <style lang="scss">
