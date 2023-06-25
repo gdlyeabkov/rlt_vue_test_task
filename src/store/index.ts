@@ -1,6 +1,10 @@
 import { createStore } from 'vuex'
 
-export default createStore({
+export interface State {
+  selectedItem: number
+}
+
+export default createStore<State>({
   state: {
     selectedItem: -1
   },
