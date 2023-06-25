@@ -35,7 +35,7 @@
     </div>
 </template>
 
-<script lang="ts">
+<script>
 import { defineComponent } from 'vue'
 import { mapState, mapMutations } from 'vuex'
 export default defineComponent({
