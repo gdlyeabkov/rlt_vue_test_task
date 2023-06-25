@@ -1,10 +1,31 @@
 <template>
-    <div></div>
+    <div v-if="isShow"
+        class="bottomSheet">
+        <div class="bottomSheet__plate">
+        </div>
+        <div class="bottomSheet__close"
+            @click="close">
+        </div>
+    </div>
 </template>
 
-<script>
-export default {
-}
+<script lang="ts">
+import { defineComponent } from 'vue'
+import { ref, Ref } from 'vue'
+export default defineComponent({
+    name: 'BottomSheet',
+    setup () {
+        const isShow: Ref<boolean> = ref(true)
+        return {
+            isShow
+        }
+    },
+    methods: {
+        close () {
+            this.isShow = false
+        }
+    }
+})
 </script>
 
 <style lang="scss">
