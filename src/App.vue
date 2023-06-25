@@ -1,15 +1,27 @@
 <template>
-  <div></div>
+  <div class="root">
+    <div class="root__row">
+      <PreviewWindow />
+      <InventoryWindow />
+    </div>
+    <BottomSheet />
+  </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent } from 'vue'
+import InventoryWindow from './components/InventoryWindow.vue'
+import PreviewWindow from './components/PreviewWindow.vue'
+import BottomSheet from './components/BottomSheet.vue'
 
 export default defineComponent({
   name: 'App',
   components: {
+    InventoryWindow,
+    PreviewWindow,
+    BottomSheet
   }
-});
+})
 </script>
 
 <style lang="scss">
